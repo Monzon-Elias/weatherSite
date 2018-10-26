@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Thanks</title>
+      <meta name="author" content="Elías Monzón">
+      <meta name="description" content="Franklin Weather Page">
+      <!-- external style references in the proper cascading order -->    
+      <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>  <!-- Google API font reference -->
+      <link rel="stylesheet" type="text/css" href="normalize.css"> <!-- normalize useragent/browser defaults -->
+      <link rel="stylesheet" type="text/css" href="small.css">    <!-- default styles - small/phone views -->
+      <link rel="stylesheet" type="text/css" href="medium.css">  <!-- medium/tablet views -->
+      <link rel="stylesheet" type="text/css" href="large.css">   <!-- large/wide/desktop views --> 
+    </head>
+    <body onload="myFunction()">
+        
+      <header class="clearfix">
+            <figure class="logo">
+                <img src="images/weather%20logo.png" alt="The site logo">
+            </figure>
+            <h1>My favourite Weather Web Site</h1>
+          <div class="subheading">Accurate weather data for the north, south, and west cost!</div>
+      </header>
+
+      <nav class="clearfix">
+          <button onclick="toggleMenu()">&#9776;</button>
+          <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>    
+            <li class="active"><a href="stormCenter.html">Storm</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+      </nav> 
+        
+      <main>
+        <h1>Thank you very much!</h1>
+		  <h2>For filling out this form</h2>
+          <h3>your contribution can help save lives.</h3>
+      </main>
+
+      <footer>
+        <aside>
+          Contact information placeholder
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | My favourite Weather Site | 
+            <span id="currentdate">Current Date Placeholder</span>
+        </p>
+      </footer>
+      <script src="hamburger.js"></script>
+      <script src="currentDate.js"></script>
+    </body>
+</html>

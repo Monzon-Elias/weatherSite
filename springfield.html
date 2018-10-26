@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My favourite Weather Site - Springfield</title>
+        <meta name="author" content="Elías Monzón">
+        <meta name="description" content="Franklin Weather Page">
+        <!-- external style references in the proper cascading order -->    
+        <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>  <!-- Google API font reference -->
+        <link rel="stylesheet" type="text/css" href="normalize.css"> <!-- normalize useragent/browser defaults -->
+        <link rel="stylesheet" type="text/css" href="small.css">    <!-- default styles - small/phone views -->
+        <link rel="stylesheet" type="text/css" href="medium.css">  <!-- medium/tablet views -->
+        <link rel="stylesheet" type="text/css" href="large.css">   <!-- large/wide/desktop views --> 
+    </head>
+    <body onload="myFunction()">
+
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/weather%20logo.png" alt="The site logo">
+            </figure>
+            <h1>My favourite Weather Web Site</h1>
+            <div class="subheading">Accurate weather data for the north, south, and west cost!</div>
+        </header>
+
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li class="active"><a href="#">Springfield</a></li>    
+                <li><a href="stormCenter.html">Storm</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav> 
+
+        <main>
+            <h2>The City of Springfield</h2>
+            <figure>
+                <img src="images/sunnyField-12.jpg" alt="sunny field" sizes="100vw" 
+                     srcset="images/sunnyField-3.jpg 320w, 
+                             images/sunnyField-6.jpg 500w, 
+                             images/sunnyField-8.jpg 800w">
+                <figcaption>Sunny Field</figcaption>
+            </figure>
+
+            <section>
+                <h2>Weather Summary</h2>    
+                <h2 id="placeS">Springfield</h2>
+                <p>Forecast: <span id="textForecastS"></span></p>
+                <p> Wind Speed in miles per hour: <span id="windSpeedS"></span></p>
+                <p>Current temperature <span id="currentTempS">30</span>&deg;</p>
+                <p>Current Weather: <span id="currentWeatherS"></span></p>
+                <img src="images/placeholder.png" alt="current weather icon" id="wiS" class="weatherIcon">
+            </section>
+
+            <section class="forecast">
+                <h3>10 Day Forecast</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day 1</th>
+                            <th>Day 2</th>
+                            <th>Day 3</th>
+                            <th>Day 4</th>
+                            <th>Day 5</th>
+                            <th>Day 6</th>
+                            <th>Day 7</th>
+                            <th>Day 8</th>
+                            <th>Day 9</th>
+                            <th>Day 10</th>
+                        </tr>
+                    </thead>
+                    <tbody>  
+                        <tr>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>72&deg;F</td>
+                            <td>79&deg;F</td>
+                            <td>83&deg;F</td>
+                            <td>85&deg;F</td>
+                            <td>89&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <article>
+                <h3>Springfield Breaks Record</h3>	
+                <p class="town-article">
+                    short article content placeholder</p>
+            </article>		  
+        </main>
+
+        <footer>
+            <aside>
+                Contact information placeholder
+            </aside>
+            <p class="footer-bar">&copy;2017 All Rights Reserved | My favourite Weather Site | 
+                <span id="currentdate">Current Date Placeholder</span>
+            </p>
+        </footer>
+        <script src="hamburger.js"></script>
+        <script src="currentDate.js"></script>
+        <script src="wu-weather.js"></script>
+    </body>
+</html>

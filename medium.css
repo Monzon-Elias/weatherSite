@@ -1,0 +1,50 @@
+@media only screen and (min-width: 41.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+nav{
+    background: #2989d8; /* Old browsers */
+    background: -moz-linear-gradient(top, #2989d8 32%, #7db9e8 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #2989d8 32%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #2989d8 32%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2989d8', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+    }
+    nav button{
+        display: none;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul.hide{
+    display: flex;
+    }
+    nav ul li a{
+        border: none;
+        border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+    }
+    
+    /* GRID SLIDESHOW STYLE */
+    
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    /* INDEX GRID STYLE */
+    
+    .frow{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .srow{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .frow img:hover {box-shadow: 5px 5px 10px gray;}
+    .srow img:hover {box-shadow: 5px 5px 10px gray;}
+}

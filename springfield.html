@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>My favourite Weather Site - Springfield</title>
-        <meta name="author" content="Elías Monzón">
+        <meta name="author" content="Elias Monzon">
         <meta name="description" content="Franklin Weather Page">
         <!-- external style references in the proper cascading order -->    
         <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>  <!-- Google API font reference -->
@@ -49,10 +49,10 @@
                 <h2>Weather Summary</h2>    
                 <h2 id="placeS">Springfield</h2>
                 <p>Forecast: <span id="textForecastS"></span></p>
-                <p> Wind Speed in miles per hour: <span id="windSpeedS"></span></p>
-                <p>Current temperature <span id="currentTempS">30</span>&deg;</p>
-                <p>Current Weather: <span id="currentWeatherS"></span></p>
-                <img src="images/placeholder.png" alt="current weather icon" id="wiS" class="weatherIcon">
+                <p> Wind Speed: <span id="windSpeedS"></span><span> mph</span></p>
+                <p>Current temperature <span id="currentTempS"></span>&deg;</p>
+                <p>Current Weather: </p>
+                <img id="currentWeatherSIcon" alt="current weather icon" class="weatherIcon">
             </section>
 
             <section class="forecast">
@@ -87,19 +87,10 @@
                         </tr>
                     </tbody>
                 </table>
-            </section>
-
-            <article>
-                <h3>Springfield Breaks Record</h3>	
-                <p class="town-article">
-                    short article content placeholder</p>
-            </article>		  
+            </section>	  
         </main>
 
         <footer>
-            <aside>
-                Contact information placeholder
-            </aside>
             <p class="footer-bar">&copy;2017 All Rights Reserved | My favourite Weather Site | 
                 <span id="currentdate">Current Date Placeholder</span>
             </p>
